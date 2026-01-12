@@ -1,13 +1,20 @@
 import Link from "next/link";
 import { Mail, MapPin, Phone, Facebook, Instagram } from "lucide-react";
 
+import Image from "next/image";
+
 export function Footer() {
     return (
-        <footer className="bg-gray-900 text-white" aria-labelledby="footer-heading">
-            <h2 id="footer-heading" className="sr-only">
-                Footer
-            </h2>
-            <div className="mx-auto max-w-7xl px-6 pb-8 pt-12 sm:pt-16 lg:px-8 lg:pt-20">
+        <footer className="bg-gray-900 text-white relative overflow-hidden" aria-labelledby="footer-heading">
+            <div className="absolute inset-0 z-0 opacity-10">
+                <Image
+                    src="/hero-team-bg.png"
+                    alt="Cleaning team background"
+                    fill
+                    className="object-cover"
+                />
+            </div>
+            <div className="relative z-10 mx-auto max-w-7xl px-6 pb-8 pt-12 sm:pt-16 lg:px-8 lg:pt-20">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-4">
                         <span className="text-2xl font-bold italic font-serif">

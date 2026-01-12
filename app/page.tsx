@@ -14,13 +14,13 @@ export default function HomePage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero-bg.png"
-            alt="Sparkling clean home background"
+            src="/hero-team-bg.png"
+            alt="Professional cleaning team in background"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-40"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-white/30"></div>
         </div>
 
         {/* Background Gradients/Blobs */}
@@ -51,12 +51,12 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="w-full sm:w-auto text-base shadow-lg shadow-teal-500/20">
+                  <Button size="lg" className="w-full sm:w-auto text-base shadow-lg shadow-teal-500/30 bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-500 hover:to-teal-400 border-0 shimmer-gold">
                     Get a Free Quote
                   </Button>
                 </Link>
                 <Link href="/services">
-                  <Button variant="secondary" size="lg" className="w-full sm:w-auto text-base">
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto text-base border-gray-200 hover:text-teal-600 hover:border-teal-200 bg-white/50 backdrop-blur-sm">
                     Explore Services
                   </Button>
                 </Link>
@@ -416,8 +416,16 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="bg-primary py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-teal-600 opacity-80 mix-blend-multiply"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="absolute inset-0 z-0 opacity-20">
+          <Image
+            src="/hero-team-bg.png"
+            alt="Professional cleaner background"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-teal-900/80 mix-blend-multiply z-10"></div>
+        <div className="container mx-auto px-4 text-center relative z-20">
           <h2 className="text-4xl font-bold tracking-tight text-white mb-6 font-serif">
             Ready for a Sparkling Clean Space?
           </h2>
